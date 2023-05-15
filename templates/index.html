@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assistant</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='javascript/index.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">AI Voice Assistant</div>
+        <div class="chat-container" id="chat-container">
+            <div class="chat" id="chat">
+                <div class="message received">
+                    <div class="content">Hello! How can I help you today?</div>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <textarea id="prompt-input" class="input" placeholder="Type your message..." onkeydown="if(event.keyCode===13){event.preventDefault();processText();}"></textarea>
+            <button type="button" onclick="processText()" class="submit-button">Send</button>
+        </div>       
+    </div>
+</body>
+</html>

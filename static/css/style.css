@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+html, body {
+    font-family: Ubuntu;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('DYP.jpg');
+    background-color: black;
+    background-size: cover;
+}
+
+
+/* .header{
+    color: white;
+} */
+
+.container {
+    height:100vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    color:whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-container {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: gray; */
+    width: 60vw;
+    height: 75vh;
+    margin:auto;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.message .content {
+    border-radius: 5px;
+}
+
+.message.received {
+    color: white;
+    border-radius: 10px;
+    background-color:rgba(37, 37, 37, 0.739);
+    flex-direction: column;
+    align-self: flex-start;
+    width: 40vw;
+    padding: 20px;
+    line-height: 1.5;
+    margin-right: 10px;
+}
+
+.message.user {
+    color: tomato;
+    background-color: #0000006b;
+    border-radius: 15px;
+    border-color: aqua;
+    font-weight: 500;
+    align-self: flex-end;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+    margin:auto;
+    width:60vw;
+    padding-top:30px;
+}
+
+.input {
+    font-family: Ubuntu;
+    color: rgba(255, 239, 239, 0.977);
+    background-color: rgba(0, 0, 0, 0.735);
+    flex-grow: 1;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 15px;
+}
+
+.input::placeholder{
+    font-family: Ubuntu;
+}
+
+.submit-button {
+    background-color: rgba(129, 129, 129, 0.382);
+    width: 10vw;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    font-family: Ubuntu;
+    font-weight: bold;
+    border: 3px solid green;
+    transition: all 0.3s ease 0s;
+}
+.submit-button:hover{
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgb(3, 205, 3);
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+}
+
+#codeDiv{
+    padding: 0 1vw;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    background-color: #0000008f;
+    scroll-behavior: auto !important;
+}
