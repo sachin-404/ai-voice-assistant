@@ -4,13 +4,17 @@ import re
 import pyttsx3
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
+## load the api key from .env file locally
+# from dotenv import load_dotenv
+# load_dotenv()
+# token = os.environ.get('API_KEY')
+
+## this loads the api key from enviroment variable while deploying on render
+token = os.environ('API_KEY')
+
+chatbot = Chatbot(token)
 
 app = Flask(__name__)
-
-token = os.environ.get('API_KEY')
-chatbot = Chatbot(token)
 
 engine = pyttsx3.init()
 
