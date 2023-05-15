@@ -97,7 +97,7 @@ function speakText(text, onComplete) {
 
     // Speak the plain text
     var utterance = new SpeechSynthesisUtterance(plainText);
-    utterance.rate = 1.5;
+    utterance.rate = 1.2;
     utterance.onend = function() {
         if (onComplete && typeof onComplete === 'function') {
             onComplete();
