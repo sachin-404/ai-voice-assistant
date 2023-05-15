@@ -10,7 +10,7 @@ import os
 # token = os.environ.get('API_KEY')
 
 ## this loads the api key from enviroment variable while deploying on render
-token = os.environ('API_KEY')
+token = os.environ['API_KEY']
 
 chatbot = Chatbot(token)
 
