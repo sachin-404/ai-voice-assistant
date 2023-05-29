@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN apt-get update && apt-get install -y espeak && \
+RUN apt-get update && apt-get install -y espeak && apt install ffmpeg \
     pip3 install --upgrade GoogleBard && \
     pip3 install -r requirements.txt
 
