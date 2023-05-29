@@ -4,8 +4,9 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN pip3 install --upgrade GoogleBard && \
-    pip install -r requirements.txt
+RUN apt-get update && apt-get install -y espeak && \
+    pip3 install --upgrade GoogleBard && \
+    pip3 install -r requirements.txt
 
 COPY . /app/
 
