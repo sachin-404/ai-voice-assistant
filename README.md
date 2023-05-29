@@ -8,3 +8,5 @@ This project is an AI-powered assistant that takes text input and provides both 
 - **Docker Containerization:** The entire application is packaged as a Docker container, allowing for easy deployment across different environments.
 - **Flask Backend:** The chatbot's logic and processing are handled by a Flask backend, providing a flexible and scalable foundation.
 - **HTML, CSS, and JavaScript Frontend:** The frontend interface is built using HTML, CSS, and JavaScript, providing an intuitive and user-friendly experience.
+
+![ai-assistant](https://github.com/sachin-404/ai-voice-assistant/assets/96824004/360405fb-9329-42f7-9ba2-8ac449cf4933)
